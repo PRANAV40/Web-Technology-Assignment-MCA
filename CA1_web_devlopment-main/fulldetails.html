@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: url(https://images6.alphacoders.com/549/549549.jpg);
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            background-size: cover;
+        }
+
+        navbar {
+            background-color: rgba(0, 0, 0, 0.13);
+            padding: .3rem 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        navbar p {
+            color: white;
+            font-size: xx-large;
+            display: inline;
+            font-family: cursive;
+        }
+
+        footer {
+            width: 100%;
+        }
+
+        .text-center {
+            color: white;
+            text-align: center;
+        }
+
+        #displaycard {
+            background-color: rgba(0, 0, 0, 0.699);
+            width: 80%;
+            margin: 1rem auto;
+            height: 600px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+            color: white;
+        }
+
+        .itemimgbox {
+            width: 40%;
+        }
+
+        .itemimg {
+            display: none;
+            margin: auto auto;
+            height: 35rem;
+        }
+
+        .itemdetails {
+            width: 55%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .details {
+            display: none;
+            font-family: cursive;
+        }
+
+        input,
+        select,
+        textarea {
+            color: white;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            resize: none;
+        }
+
+        .discription {
+            display: flex;
+            justify-content: center;
+        }
+
+        .pricebtn {
+            display: block;
+            padding: 5px 10px;
+            font-family: cursive;
+            width: 30%;
+            margin: 1rem auto;
+            border: 1px solid green;
+            background-color: green;
+            outline: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+    <navbar>
+        <span>
+            <img src="https://th.bing.com/th/id/R.3694533c7a34df40e210c83245bc705a?rik=ShEgAflc9vNMLg&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-rolls-royce-car-logorolls-royce-carbritish-car-manufacturerolls-royce-automotiverolls-royce-limitedrolls-royce-car-logo-1701527611258aboh3.png&ehk=9Ph9b61UMti3ogdRTdTYuw1Ko8zKWhjsYfJ%2fQftHCdE%3d&risl=&pid=ImgRaw&r=0"
+                alt="logo" height="50px" width="50px">
+        </span>
+        <span>
+            <p>Rolls-Royce</p>
+        </span>
+    </navbar>
+    <section id="displaycard">
+        <div class="itemimgbox">
+            <img src="https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/common/navigation/desktop/Phantom-SWB-panel-D.jpg/jcr:content/renditions/cq5dam.web.1125.webp"
+                alt="PHANTOM" class="itemimg">
+            <img src="https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/common/navigation/desktop/Phantom-EWB-panel-D.jpg/jcr:content/renditions/cq5dam.web.1125.webp"
+                alt="PHANTOM EXTENDED" class="itemimg">
+            <img src="https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/common/navigation/desktop/Cullinan-panel-D.jpg/jcr:content/renditions/cq5dam.web.1125.webp"
+                alt="CULLINAN" class="itemimg">
+            <img src="https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/common/navigation/desktop/ghost-new/Ghost-SWB-panel.jpg/jcr:content/renditions/cq5dam.web.1125.webp"
+                alt="GHOST" class="itemimg">
+            <img src="https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/common/navigation/desktop/ghost-new/Ghost-EWB-panel.jpg/jcr:content/renditions/cq5dam.web.1125.webp"
+                alt="GHOST EXTENDED" class="itemimg">
+            <img src="https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/common/navigation/desktop/Wraith-panel-D.jpg/jcr:content/renditions/cq5dam.web.1125.webp"
+                alt="WRAITH" class="itemimg">
+            <img src="https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/common/navigation/desktop/Dawn-panel-D.jpg/jcr:content/renditions/cq5dam.web.1125.webp"
+                alt="DAWN" class="itemimg">
+            <img src="https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/common/navigation/desktop/BB_RR21_MENU_D.jpg/jcr:content/renditions/cq5dam.web.1125.webp"
+                alt="BLACK BADGE" class="itemimg">
+            <img src="https://www.rolls-roycemotorcars.com/content/dam/rrmc/marketUK/common/navigation/desktop/Model-Update-Spectre-Menu-D.jpg/jcr:content/renditions/cq5dam.web.1125.webp"
+                alt="SPECTRE" class="itemimg">
+        </div>
+        <div class="itemdetails">
+            <form action="/homepage.html" class="details">
+                <div>
+                    <label for="name"><b>Name : </b></label>
+                    <input type="text" name="name" value="Phantom" readonly>
+                </div>
+                <br>
+                <div class="discription">
+                    <label for="description"><b>Description : &nbsp;</b></label>
+                    <textarea id="description" name="w3review" rows="10" cols="40" readonly>he world’s finest A-grade leather. Lambswool floormats that cosset the feet. Hand-crafted wood veneers please sight and touch. Master craftsmen have worked the finest materials to create a finish that is beyond exquisite. This is the Phantom Suite. Your sanctum. Your space to rewrite the rules.
+                </textarea>
+                </div>
+                <div>
+                    <label for=""><b>Fuel Type :&nbsp;</b>></label>
+                    <input type="radio" id="Petrol" name="fav_language" checked>
+                    <label for="Petrol">Petrol</label>
+                    <input type="radio" id="Diesel" name="fav_language">
+                    <label for="Diesel">Diesel</label>
+                </div>
+                <br>
+                <div>
+                    <label for="version"><b>Model Version :&nbsp;</b></label>
+                    <select Name="model version" id="version">
+                        <option style="background-color: black;"> Version 1.0 </option>
+                        <option style="background-color: black;"> Version 2.0 </option>
+                        <option style="background-color: black;"> Version 3.0 </option>
+                        <option style="background-color: black;"> Version 4.0 </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="color"><b>Color :&nbsp;</b></label>
+                    <input type="color" name="color" id="">>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="pricebtn">Price : &#x24;490,000<br> Book Now</button>
+                </div>
+            </form>
+            <form action="/homepage.html" class="details">
+                <div>
+                    <label for="name"><b>Name : </b></label>
+                    <input type="text" name="name" value="Phantom Extended" readonly>
+                </div>
+                <br>
+                <div class="discription">
+                    <label for="description"><b>Description : &nbsp;</b></label>
+                    <textarea id="description" name="w3review" rows="10" cols="40" readonly>he world’s finest A-grade leather. Lambswool floormats that cosset the feet. Hand-crafted wood veneers please sight and touch. Master craftsmen have worked the finest materials to create a finish that is beyond exquisite. This is the Phantom Suite. Your sanctum. Your space to rewrite the rules.
+                </textarea>
+                </div>
+                <div>
+                    <label for=""><b>Fuel Type :&nbsp;</b>></label>
+                    <input type="radio" id="Petrol" name="fav_language" checked>
+                    <label for="Petrol">Petrol</label>
+                    <input type="radio" id="Diesel" name="fav_language">
+                    <label for="Diesel">Diesel</label>
+                </div>
+                <br>
+                <div>
+                    <label for="version"><b>Model Version :&nbsp;</b></label>
+                    <select Name="model version" id="version">
+                        <option style="background-color: black;"> Version 1.0 </option>
+                        <option style="background-color: black;"> Version 2.0 </option>
+                        <option style="background-color: black;"> Version 3.0 </option>
+                        <option style="background-color: black;"> Version 4.0 </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="color"><b>Color :&nbsp;</b></label>
+                    <input type="color" name="color" id="">>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="pricebtn">Price : &#x24;450,000<br> Book Now</button>
+                </div>
+            </form>
+            <form action="/homepage.html" class="details">
+                <div>
+                    <label for="name"><b>Name : </b></label>
+                    <input type="text" name="name" value="Cullinan" readonly>
+                </div>
+                <br>
+                <div class="discription">
+                    <label for="description"><b>Description : &nbsp;</b></label>
+                    <textarea id="description" name="w3review" rows="10" cols="40" readonly>he world’s finest A-grade leather. Lambswool floormats that cosset the feet. Hand-crafted wood veneers please sight and touch. Master craftsmen have worked the finest materials to create a finish that is beyond exquisite. This is the Phantom Suite. Your sanctum. Your space to rewrite the rules.
+                </textarea>
+                </div>
+                <div>
+                    <label for=""><b>Fuel Type :&nbsp;</b>></label>
+                    <input type="radio" id="Petrol" name="fav_language" checked>
+                    <label for="Petrol">Petrol</label>
+                    <input type="radio" id="Diesel" name="fav_language">
+                    <label for="Diesel">Diesel</label>
+                </div>
+                <br>
+                <div>
+                    <label for="version"><b>Model Version :&nbsp;</b></label>
+                    <select Name="model version" id="version">
+                        <option style="background-color: black;"> Version 1.0 </option>
+                        <option style="background-color: black;"> Version 2.0 </option>
+                        <option style="background-color: black;"> Version 3.0 </option>
+                        <option style="background-color: black;"> Version 4.0 </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="color"><b>Color :&nbsp;</b></label>
+                    <input type="color" name="color" id="">>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="pricebtn">Price : &#x24;590,000<br> Book Now</button>
+                </div>
+            </form>
+            <form action="/homepage.html" class="details">
+                <div>
+                    <label for="name"><b>Name : </b></label>
+                    <input type="text" name="name" value="Ghost" readonly>
+                </div>
+                <br>
+                <div class="discription">
+                    <label for="description"><b>Description : &nbsp;</b></label>
+                    <textarea id="description" name="w3review" rows="10" cols="40" readonly>he world’s finest A-grade leather. Lambswool floormats that cosset the feet. Hand-crafted wood veneers please sight and touch. Master craftsmen have worked the finest materials to create a finish that is beyond exquisite. This is the Phantom Suite. Your sanctum. Your space to rewrite the rules.
+                </textarea>
+                </div>
+                <div>
+                    <label for=""><b>Fuel Type :&nbsp;</b>></label>
+                    <input type="radio" id="Petrol" name="fav_language" checked>
+                    <label for="Petrol">Petrol</label>
+                    <input type="radio" id="Diesel" name="fav_language">
+                    <label for="Diesel">Diesel</label>
+                </div>
+                <br>
+                <div>
+                    <label for="version"><b>Model Version :&nbsp;</b></label>
+                    <select Name="model version" id="version">
+                        <option style="background-color: black;"> Version 1.0 </option>
+                        <option style="background-color: black;"> Version 2.0 </option>
+                        <option style="background-color: black;"> Version 3.0 </option>
+                        <option style="background-color: black;"> Version 4.0 </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="color"><b>Color :&nbsp;</b></label>
+                    <input type="color" name="color" id="">>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="pricebtn">Price : &#x24;311,900<br> Book Now</button>
+                </div>
+            </form>
+            <form action="/homepage.html" class="details">
+                <div>
+                    <label for="name"><b>Name : </b></label>
+                    <input type="text" name="name" value="Ghost Extended" readonly>
+                </div>
+                <br>
+                <div class="discription">
+                    <label for="description"><b>Description : &nbsp;</b></label>
+                    <textarea id="description" name="w3review" rows="10" cols="40" readonly>he world’s finest A-grade leather. Lambswool floormats that cosset the feet. Hand-crafted wood veneers please sight and touch. Master craftsmen have worked the finest materials to create a finish that is beyond exquisite. This is the Phantom Suite. Your sanctum. Your space to rewrite the rules.
+                </textarea>
+                </div>
+                <div>
+                    <label for=""><b>Fuel Type :&nbsp;</b>></label>
+                    <input type="radio" id="Petrol" name="fav_language" checked>
+                    <label for="Petrol">Petrol</label>
+                    <input type="radio" id="Diesel" name="fav_language">
+                    <label for="Diesel">Diesel</label>
+                </div>
+                <br>
+                <div>
+                    <label for="version"><b>Model Version :&nbsp;</b></label>
+                    <select Name="model version" id="version">
+                        <option style="background-color: black;"> Version 1.0 </option>
+                        <option style="background-color: black;"> Version 2.0 </option>
+                        <option style="background-color: black;"> Version 3.0 </option>
+                        <option style="background-color: black;"> Version 4.0 </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="color"><b>Color :&nbsp;</b></label>
+                    <input type="color" name="color" id="">>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="pricebtn">Price : &#x24;380,000<br> Book Now</button>
+                </div>
+            </form>
+            <form action="/homepage.html" class="details">
+                <div>
+                    <label for="name"><b>Name : </b></label>
+                    <input type="text" name="name" value="Wraith" readonly>
+                </div>
+                <br>
+                <div class="discription">
+                    <label for="description"><b>Description : &nbsp;</b></label>
+                    <textarea id="description" name="w3review" rows="10" cols="40" readonly>he world’s finest A-grade leather. Lambswool floormats that cosset the feet. Hand-crafted wood veneers please sight and touch. Master craftsmen have worked the finest materials to create a finish that is beyond exquisite. This is the Phantom Suite. Your sanctum. Your space to rewrite the rules.
+                </textarea>
+                </div>
+                <div>
+                    <label for=""><b>Fuel Type :&nbsp;</b>></label>
+                    <input type="radio" id="Petrol" name="fav_language" checked>
+                    <label for="Petrol">Petrol</label>
+                    <input type="radio" id="Diesel" name="fav_language">
+                    <label for="Diesel">Diesel</label>
+                </div>
+                <br>
+                <div>
+                    <label for="version"><b>Model Version :&nbsp;</b></label>
+                    <select Name="model version" id="version">
+                        <option style="background-color: black;"> Version 1.0 </option>
+                        <option style="background-color: black;"> Version 2.0 </option>
+                        <option style="background-color: black;"> Version 3.0 </option>
+                        <option style="background-color: black;"> Version 4.0 </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="color"><b>Color :&nbsp;</b></label>
+                    <input type="color" name="color" id="">>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="pricebtn">Price : &#x24;320,000<br> Book Now</button>
+                </div>
+            </form>
+            <form action="/homepage.html" class="details">
+                <div>
+                    <label for="name"><b>Name : </b></label>
+                    <input type="text" name="name" value="Dawn" readonly>
+                </div>
+                <br>
+                <div class="discription">
+                    <label for="description"><b>Description : &nbsp;</b></label>
+                    <textarea id="description" name="w3review" rows="10" cols="40" readonly>he world’s finest A-grade leather. Lambswool floormats that cosset the feet. Hand-crafted wood veneers please sight and touch. Master craftsmen have worked the finest materials to create a finish that is beyond exquisite. This is the Phantom Suite. Your sanctum. Your space to rewrite the rules.
+                </textarea>
+                </div>
+                <div>
+                    <label for=""><b>Fuel Type :&nbsp;</b>></label>
+                    <input type="radio" id="Petrol" name="fav_language" checked>
+                    <label for="Petrol">Petrol</label>
+                    <input type="radio" id="Diesel" name="fav_language">
+                    <label for="Diesel">Diesel</label>
+                </div>
+                <br>
+                <div>
+                    <label for="version"><b>Model Version :&nbsp;</b></label>
+                    <select Name="model version" id="version">
+                        <option style="background-color: black;"> Version 1.0 </option>
+                        <option style="background-color: black;"> Version 2.0 </option>
+                        <option style="background-color: black;"> Version 3.0 </option>
+                        <option style="background-color: black;"> Version 4.0 </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="color"><b>Color :&nbsp;</b></label>
+                    <input type="color" name="color" id="">>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="pricebtn">Price : &#x24;356,000<br> Book Now</button>
+                </div>
+            </form>
+            <form action="/homepage.html" class="details">
+                <div>
+                    <label for="name"><b>Name : </b></label>
+                    <input type="text" name="name" value="Black Badge" readonly>
+                </div>
+                <br>
+                <div class="discription">
+                    <label for="description"><b>Description : &nbsp;</b></label>
+                    <textarea id="description" name="w3review" rows="10" cols="40" readonly>he world’s finest A-grade leather. Lambswool floormats that cosset the feet. Hand-crafted wood veneers please sight and touch. Master craftsmen have worked the finest materials to create a finish that is beyond exquisite. This is the Phantom Suite. Your sanctum. Your space to rewrite the rules.
+                </textarea>
+                </div>
+                <div>
+                    <label for=""><b>Fuel Type :&nbsp;</b>></label>
+                    <input type="radio" id="Petrol" name="fav_language" checked>
+                    <label for="Petrol">Petrol</label>
+                    <input type="radio" id="Diesel" name="fav_language">
+                    <label for="Diesel">Diesel</label>
+                </div>
+                <br>
+                <div>
+                    <label for="version"><b>Model Version :&nbsp;</b></label>
+                    <select Name="model version" id="version">
+                        <option style="background-color: black;"> Version 1.0 </option>
+                        <option style="background-color: black;"> Version 2.0 </option>
+                        <option style="background-color: black;"> Version 3.0 </option>
+                        <option style="background-color: black;"> Version 4.0 </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="color"><b>Color :&nbsp;</b></label>
+                    <input type="color" name="color" id="">>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="pricebtn">Price : &#x24;382,000<br> Book Now</button>
+                </div>
+            </form>
+            <form action="/homepage.html" class="details">
+                <div>
+                    <label for="name"><b>Name : </b></label>
+                    <input type="text" name="name" value="Spectre" readonly>
+                </div>
+                <br>
+                <div class="discription">
+                    <label for="description"><b>Description : &nbsp;</b></label>
+                    <textarea id="description" name="w3review" rows="10" cols="40" readonly>he world’s finest A-grade leather. Lambswool floormats that cosset the feet. Hand-crafted wood veneers please sight and touch. Master craftsmen have worked the finest materials to create a finish that is beyond exquisite. This is the Phantom Suite. Your sanctum. Your space to rewrite the rules.
+                </textarea>
+                </div>
+                <div>
+                    <label for=""><b>Fuel Type :&nbsp;</b>></label>
+                    <input type="radio" id="Petrol" name="fav_language" checked>
+                    <label for="Petrol">Petrol</label>
+                    <input type="radio" id="Diesel" name="fav_language">
+                    <label for="Diesel">Diesel</label>
+                </div>
+                <br>
+                <div>
+                    <label for="version"><b>Model Version :&nbsp;</b></label>
+                    <select Name="model version" id="version">
+                        <option style="background-color: black;"> Version 1.0 </option>
+                        <option style="background-color: black;"> Version 2.0 </option>
+                        <option style="background-color: black;"> Version 3.0 </option>
+                        <option style="background-color: black;"> Version 4.0 </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="color"><b>Color :&nbsp;</b></label>
+                    <input type="color" name="color" id="">>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="pricebtn">Price : &#x24;400,000<br> Book Now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        let params = new URLSearchParams(location.search).get('id');
+        console.log(params);
+        let img = document.getElementsByClassName("itemimg");
+        let details = document.getElementsByClassName("details");
+        img[params].style.display = "block";
+        details[params].style.display = "block";
+    </script>
+</body>
+
+</html>

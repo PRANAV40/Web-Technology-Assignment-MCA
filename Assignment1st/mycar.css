@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    overflow-x: hidden;
+}
+h1{
+    text-align: left;
+    margin-top: 0px;
+    background-color: none;
+    font-size: 20px;
+    float:bottom;
+    border:5px black;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 5%;
+    background-color: aquamarine;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+.pooter{
+    height:10px;
+    top:0cm;
+    text-align: bottom - left;
+    font-weight: bold;
+    color:none;
+}
+
+navbar {
+    background-color: rgba(0, 0, 0, 0.13);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+navbar p {
+    color: white;
+    font-size: xx-large;
+    display: inline;
+    font-family: cursive;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:blue;
+    font-size: 15px;
+}
+.galleryrbtn {
+    text-decoration: none;
+    position: absolute;
+    right: 2rem;
+    border: 1px solid red;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px red;
+    top: 35%;
+    background-color: rgb(247, 161, 33);
+}
+
+.galleryrbtn:hover {
+    box-shadow: 0px 0px 15px 3px red;
+}
+
+.galleryrbtn p {
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: large;
+}
+.Bookbtn {
+    text-decoration: none;
+    position: absolute;
+    right: 6rem;
+    border: 1px solid red;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px red;
+    top: 35%;
+    background-color: rgb(247, 161, 33);
+}
+
+.Bookbtnn:hover {
+    box-shadow: 0px 0px 15px 3px red;
+}
+
+.Bookbtn p {
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: large;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    overflow: hidden;
+    background-color: grey;
+}
+
+.footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: normal;
+}

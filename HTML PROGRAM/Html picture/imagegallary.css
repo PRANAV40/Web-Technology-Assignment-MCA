@@ -1,0 +1,25 @@
+.gallery{
+ padding: 10px;
+ float: left;
+ margin: 10px auto 10px auto;
+ margin-left: 2%;
+}
+body{
+ background-color: LIGHTPINK
+
+;
+}
+h1{
+ text-align: center;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ color: yellow;
+}
+h2{
+ text-align: center;
+ font-family: cursive;
+}
+figcaption{
+ text-align: center;
+ color: red;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
